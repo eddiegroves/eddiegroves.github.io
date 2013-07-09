@@ -6,32 +6,8 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-
-    </head>
-    <body>
-
-        <div class="container">
-          <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-              <a class="extra" href="/">home</a>
-              <a class="extra" href="https://twitter.com/eddiegroves">twitter</a>
-              <a class="extra" href="https://github.com/eddiegroves">github</a>
-              <a class="extra" href="/about">about me</a>
-            </div>
-     
-                {{ content }}
-
-            <div class="footer">
-                <div class="contact">By <a rel="author" href="http://withcode.com/about">Eddie Groves</a></div>
-            </div>
-          </div>
-        </div> <!-- /container -->
 
         <!-- So ugly Google! -->
         <script>
@@ -43,5 +19,22 @@
             ga('create', 'UA-42335475-1', 'withcode.com');
             ga('send', 'pageview');
         </script>
+    </head>
+    <body>
+        <div class="container">
+          <div class="site">
+            <div class="header">
+              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+              <a class="extra" href="/">home</a>
+              <a class="extra" href="https://twitter.com/eddiegroves">twitter</a>
+              <a class="extra" href="https://github.com/eddiegroves">github</a>
+              <a class="extra" href="/about">about me</a>
+            </div>
+            {{ content }}
+            <div class="footer">
+                <div class="contact">By <a rel="author" href="http://withcode.com/about">Eddie Groves</a></div>
+            </div>
+          </div>
+        </div>
     </body>
 </html>
