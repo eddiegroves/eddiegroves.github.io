@@ -26,27 +26,27 @@ Move them to some place permanent, for example `c:\bin`.
 
 ### Step 2 - Add GIT_SSH Environment Variable
 
-<img src="images/github-ssh-tutorial/windows-control-panel-environment-var.png" width="521" height="251" alt="Find Windows enviornment variable settings in Control Panel" />
+<img src="/images/2013/07/windows-control-panel-environment-var.png" width="521" height="251" alt="Find Windows enviornment variable settings in Control Panel" />
 
 Set name to `GIT_SSH` and value to the location of `plink.exe`.
 
-<img src="images/github-ssh-tutorial/windows-new-user-variable.png" width="357" height="154" alt="Add new environment variable" />
+<img src="/images/2013/07/windows-new-user-variable.png" width="357" height="154" alt="Add new environment variable" />
 
 ### Step 3 - Create a Key
 
 Use `puttygen.exe` to **generate** and public/private key.
 
-<img src="images/github-ssh-tutorial/putty-key-generator.png" width="493" height="478" alt="Putty key generator example" />
+<img src="/images/2013/07/putty-key-generator.png" width="493" height="478" alt="Putty key generator example" />
 
 Save the **private key** somewhere with a passphrase and then **copy** the public key text to the clipboard.
 
-<img src="images/github-ssh-tutorial/putty-key-generator-copy-key.png" width="498" height="234" alt="Select and copy the public key text" />
+<img src="/images/2013/07/putty-key-generator-copy-key.png" width="498" height="234" alt="Select and copy the public key text" />
 
 ### Step 4 - Add Key to GitHub
 
 Login to **GitHub** and under `Account settings` > `SSH Keys` add a new key and paste your key.
 
-<img src="images/github-ssh-tutorial/add-key-to-github.png" width="501" height="206" alt="Add new SSH key to GitHub" />
+<img src="/images/2013/07/add-key-to-github.png" width="501" height="206" alt="Add new SSH key to GitHub" />
 
 ### Step 5 - Use Pageant
 
@@ -61,7 +61,7 @@ You should receive an error message containing:
 Run `pageant.exe`, this will add an icon into the taskbar. Add your SSH key to the agent
 by **right clicking** the icon.
 
-<img src="images/github-ssh-tutorial/pageant-taskbar-icon.png" width="168" height="240" alt="Pageant taskbar icon" />
+<img src="/images/2013/07/pageant-taskbar-icon.png" width="168" height="240" alt="Pageant taskbar icon" />
 Try connecting again:
 
     plink git@github.com
